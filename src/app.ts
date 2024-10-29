@@ -1,16 +1,16 @@
 import express, { Application } from 'express';
-// import routes from './routes/index';
+import routes from './routes/ticket.routes';
 
 class App {
   public app: Application;
   constructor() {
       this.app = express();
-      // this.routes();
+      this.routes();
   }
   
-  // private routes():void {
-  //     this.app.use('/api', routes);
-  // }
+  private routes():void {
+      this.app.use('/api', routes);
+  }
 
   public start(PORT: number): void {
       this.app.listen(PORT, () => {
