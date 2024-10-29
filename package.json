@@ -12,12 +12,15 @@
   "license": "ISC",
   "dependencies": {
     "dotenv": "^16.4.5",
-    "express": "^4.21.1"
+    "express": "^4.21.1",
+    "mysql2": "2.3.0"
   },
   "devDependencies": {
     "@types/express": "^5.0.0",
-    "@types/node": "^22.8.2",
+    "@types/node": "16.11.7",
     "nodemon": "^3.1.7",
+    "sequelize": "^6.25.5",
+    "sequelize-cli": "^6.4.1",
     "ts-node": "^10.9.2",
     "typescript": "^5.6.3"
   }
