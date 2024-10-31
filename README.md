@@ -31,6 +31,10 @@ docker-compose up -d
 ```
 npm run dev
 ```
+6. Rode o teste utilizando:
+```
+npm run test
+```
 ## Postman
 1. Importe o arquivo [sisloc_software.postman_collection.json](./sisloc_software.postman_collection.json) no Postman para ter acesso aos endpoints já configurados.
 
