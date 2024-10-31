@@ -4,8 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon src/server.ts"
+    "test": "mocha -r ts-node/register 'test/**/*.test.ts'",
+    "dev": "nodemon src/server.ts",
+    "test:mocha": "mocha",
+    "test:coverage": "nyc mocha"
   },
   "keywords": [],
   "author": "",
@@ -16,11 +18,21 @@
     "mysql2": "2.3.0"
   },
   "devDependencies": {
+    "@types/chai": "^5.0.1",
     "@types/express": "^5.0.0",
+    "@types/mocha": "9.1.0",
     "@types/node": "16.11.7",
+    "@types/sinon": "^17.0.3",
+    "@types/sinon-chai": "^4.0.0",
+    "chai": "^4.3.4",
+    "chai-http": "4.3.0",
+    "mocha": "10.2.0",
     "nodemon": "^3.1.7",
+    "nyc": "15.1.0",
     "sequelize": "^6.25.5",
     "sequelize-cli": "^6.4.1",
+    "sinon": "^11.1.1",
+    "sinon-chai": "^3.7.0",
     "ts-node": "^10.9.2",
     "typescript": "^5.6.3"
   }
