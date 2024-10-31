@@ -1,5 +1,5 @@
 import express, { Application } from 'express';
-import routes from './routes/ticket.routes';
+import routes from './routes/products.routes';
 
 class App {
     public app: Application;
