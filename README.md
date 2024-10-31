@@ -16,7 +16,7 @@ git clone git@github.com:anacarolinaraca/sisloc-software-teste.git
 ```
 2. Acesse o diretório do projeto:
 ```
-cd /sisloc-software-teste
+cd sisloc-software-teste
 ```
 3. Instale as dependências do projeto:
 ```
@@ -32,4 +32,12 @@ docker-compose up -d
 npm run dev
 ```
 ## Postman
-Carregue o arquivo prova-sisloc.json no Postman para ter acesso aos endpoints já configurados.
+1. Importe o arquivo [sisloc_software.postman_collection.json](./sisloc_software.postman_collection.json) no Postman para ter acesso aos endpoints já configurados.
+
+2. Para testar cada uma das funcionalidades, siga a ordem abaixo:
+- Rode a rota Exercício 01 para visualizar o retorno do cálculo.
+- Rode a rota Exercício 02 - Questão A para criar as tabelas no banco de dados.
+- Rode a rota Exercício 02 - Questão B para inserir dados na tabela de produto.
+- Rode a rota Exercício 02 - Questão C para inserir dados na tabela de produto desconto.
+- Rode a rota Exercício 02 - Questão D para inserir dados na tabela de produto e produto desconto com o valor do calculo do exercício 01.
+- Rode a rota Exercício 02 - Questão E para buscar pelo código do produto e a quantidade de ingressos a ser vendido, retornando o valor total.
