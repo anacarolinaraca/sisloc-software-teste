@@ -1,13 +1,20 @@
-// EXERCICIO 01
+// Exercicio 01
+/* A função calculateTicketPrice realiza o calculo do total dos ingressos com base na quantidade comprada, sendo aplicado diferentes valores de acordo com a faixa.
+*/
 export default function calculateTicketPrice(quantity: number): number {
   let sumTicket = 0;
+  const RANGE_1 = 5;
+  const RANGE_2 = 15;
+  const VALUE_RANGE_1 = 50;
+  const VALUE_RANGE_2 = 45;
+  const VALUE_RANGE_3 = 40;
 
-  if (quantity <= 5) {
-    sumTicket = quantity * 50;
-  } else if (quantity >= 6 && quantity <= 15) {
-    sumTicket = 5 * 50 + (quantity - 5) * 45;
+  if (quantity <= RANGE_1) {
+    sumTicket = quantity * VALUE_RANGE_1;
+  } else if (quantity > RANGE_1 && quantity <= RANGE_2) {
+    sumTicket = RANGE_1 * VALUE_RANGE_1 + (quantity - RANGE_1) * VALUE_RANGE_2;
   } else {
-    sumTicket = 5 * 50 + 10 * 45 + (quantity - 15) * 40;
+    sumTicket = (RANGE_1 * VALUE_RANGE_1) + 10 * VALUE_RANGE_2 + (quantity - RANGE_2) * VALUE_RANGE_3;
   }
   return sumTicket;
 }
